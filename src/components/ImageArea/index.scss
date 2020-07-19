@@ -1,0 +1,19 @@
+.image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: auto;
+  min-height: 500px;
+  border: 1px solid #4b4b4b;
+
+  .image-src {
+    height: 500px;
+  }
+
+  .image-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
