@@ -7,6 +7,14 @@
   min-height: 500px;
   border: 1px solid #4b4b4b;
 
+  .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+
   .image-src {
     height: 500px;
   }
