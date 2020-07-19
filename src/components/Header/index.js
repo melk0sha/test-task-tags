@@ -1,7 +1,13 @@
 import React from "react";
+import DragAndDrop from "../DragAndDrop";
+import "./index.scss";
 
-function Header() {
-  return <div></div>;
-}
+const Header = ({ handleSrc }) => {
+  return (
+    <header className="header">
+      <DragAndDrop handleSrc={handleSrc} />
+    </header>
+  );
+};
 
 export default Header;

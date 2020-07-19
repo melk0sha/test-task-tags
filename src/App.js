@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import Header from "./components/Header";
+import ImageArea from "./components/ImageArea";
+import Menu from "./components/Menu";
+import Notes from "./components/Notes";
 import "./assets/styles/index.scss";
 import "./App.scss";
 
-function App() {
-  return <div className="App"></div>;
-}
+const App = () => {
+  const [src, setSrc] = useState("");
+  const [tags, setTags] = useState([]);
+
+  return (
+    <div className="app">
+      <Header handleSrc={setSrc} />
+      <main className="main">
+        <Menu />
+        <ImageArea imageSrc={src} tags={tags} handleTags={setTags} />
+        <Notes />
+      </main>
+    </div>
+  );
+};
 
 export default App;
